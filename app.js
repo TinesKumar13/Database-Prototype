@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const mongoose = require ("mongoose")
 const cors = require("cors")
-const path = require('path')
+
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -30,9 +30,7 @@ const authRoute = require('./routes/auth')
 
 app.use("/api", postsRoute)
 app.use("/api/user", authRoute)
-app.get("/" , function(req,res){
-    res.render("index")
-})
+
 
 
 const PORT = process.env.PORT || 8000
