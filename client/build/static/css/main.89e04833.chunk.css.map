@@ -1,0 +1,1 @@
+{"version":3,"sources":["buttons.css"],"names":[],"mappings":"AAAA,SACI,YAAY,CACZ,kBAGJ,CAEA,uBACI,gBACJ","file":"main.89e04833.chunk.css","sourcesContent":[".buttons{\n    display:flex;\n    margin-right: 79rem;\n    \n    \n}\n\n.buttons > :nth-child(2) {\n    margin-left: 10px;\n}"]}
