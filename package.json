@@ -4,11 +4,14 @@
   "main": "app.js",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run app\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run app.js\" \"npm run client\"",
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "engines": {
+    "node": "12.18.4"
   },
   "keywords": [],
   "author": "",
