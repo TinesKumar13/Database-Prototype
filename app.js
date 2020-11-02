@@ -13,7 +13,7 @@ app.use(cookieParser())
 
 
 //DB CONNECTIONS
-mongoose.connect(process.env.DATABASE ,{
+mongoose.connect(process.env.DATABASE || 'mongodb+srv://devTines:tiaga13599@cluster0.f2wvr.mongodb.net/sare?retryWrites=true&w=majority',{
     useNewUrlParser : true,
     useUnifiedTopology : true,
     useCreateIndex: true,
